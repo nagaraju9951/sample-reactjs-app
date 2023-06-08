@@ -11,7 +11,7 @@ pipeline {
                 script {
                     def remoteServer = '54.144.67.133'
                     def remoteUser = 'ubuntu'
-                    def remoteDockerImage = 'react.js'
+                    def remoteDockerImage = 'node'
                     def imageName = "nagarajusatyala/promote-release:${env.BUILD_NUMBER}"
                     def latestImageName = "nagarajusatyala/promote-release:latest"
 
