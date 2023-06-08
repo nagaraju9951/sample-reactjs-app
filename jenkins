@@ -1,7 +1,7 @@
 pipeline {
     agent {
         node {
-            label 't053-runner'
+            label 't057-runner'
         }
     }
     tools {
@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git credentialsId: 'ca-git-access', branch: 'develop', url: 'https://git.cloudavise.com/visops/t053/sample-reactjs-app.git'
+                git credentialsId: 'ca-git-access', branch: 'develop', url: 'https://git.cloudavise.com/visops/t057/sample-reactjs-app.git'
             }
         }
 
@@ -29,8 +29,8 @@ pipeline {
 
         stage('Prepare') {
             steps {
-                sh 'ansible-vault decrypt --vault-id /opt/vault-id test-key.pem'
-                sh 'chmod 400 test-key.pem'
+                sh 'ansible-vault decrypt --vault-id /opt/vault-id demokey.pem'
+                sh 'chmod 400 demokey.pem'
                 sh 'chmod +x deploy_script.sh'
                 sh 'sudo ./deploy_script.sh prepare'
             }
