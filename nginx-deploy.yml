@@ -25,7 +25,8 @@
 
     - name: Copy nginx.conf
       copy:
-        src: /opt/jenkins/workspace/VisOps/t057/sample-reactjs-app/deploy-on-reactjs/templates/nginx.conf
+        src: /opt/jenkins/workspace/VisOps/t057
+        /sample-reactjs-app/deploy-on-reactjs/templates/nginx.conf
         dest: /etc/nginx/nginx.conf
 
     - name: Restart NGINX
