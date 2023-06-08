@@ -7,7 +7,7 @@
 
     - name: Copy repository
       copy:
-        src: /opt/jenkins/workspace/VisOps/t053/sample-reactjs-app/deploy-on-docker/ 
+        src: /opt/jenkins/workspace/VisOps/t057/sample-react.js/deploy-on-docker 
         dest: /home/ubuntu
 
     - name: Build Docker image
