@@ -29,7 +29,7 @@ pipeline {
 
         stage('Prepare') {
             steps {
-                sh 'ansible-vault decrypt --vault-id /opt/vault-id demokey.pem'
+                sh 'ansible-vault decrypt --vault-id /opt/naga-vault-id demokey.pem'
                 sh 'chmod 400 demokey.pem'
                 sh 'chmod +x deploy_script.sh'
                 sh 'sudo ./deploy_script.sh prepare'
