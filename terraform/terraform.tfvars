@@ -1,7 +1,6 @@
-ami_id = "ami-053b0d53c279acc90"
-inst_type = "t2.micro"
-jenkins_key_name = "demokey"
-webapp_key_name = "demokey"
-subnet_id = "subnet-012310804fb2032e4"
-vpc_id = "vpc-0cddd3113de98d7b8"
-aws_region = "us-east-1"
+ami_id = "ami-0261755bbcb8c4a84"
+instance_type = "t2.micro"
+key_name = "test-key"
+sg_ids = ["sg-0e7c7a1e8b6fd2f1d"]
+subnet_id = "subnet-0c95f32ef3dfcf982"
+region = "us-east-1"
