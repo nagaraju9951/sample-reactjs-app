@@ -11,7 +11,7 @@
         dest: /home/ubuntu
 
     - name: Build Docker image
-      command: docker build -t node:v01 /home/ubuntu/.
+      command: docker build -t node:v01 .
 
     - name: Run Docker container
       command: docker run -it -d -p 8001:3000 node:v01
